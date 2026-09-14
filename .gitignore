@@ -1,0 +1,17 @@
+.DS_Store
+.venv/
+__pycache__/
+*.py[cod]
+
+# 所有下载内容默认不进入Git；开放许可文件也需人工核对署名后再发布。
+data/raw/**
+!data/raw/.gitkeep
+data/logs/**
+!data/logs/.gitkeep
+data/processed/**
+!data/processed/.gitkeep
+data/cache/
+artifacts/
+
+# 原始文件下载时使用的临时文件。
+*.part

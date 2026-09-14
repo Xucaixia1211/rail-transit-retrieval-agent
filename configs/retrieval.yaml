@@ -1,0 +1,33 @@
+retrieval:
+  bm25_top_k: 50
+  dense_top_k: 50
+  hybrid_top_k: 50
+  rerank_candidates: 30
+  final_top_k: 10
+  rrf_k: 60
+
+models:
+  embedding:
+    name: intfloat/multilingual-e5-small
+    revision: main
+    query_prefix: "query: "
+    passage_prefix: "passage: "
+    batch_size: 16
+    max_seq_length: 512
+  reranker:
+    name: cross-encoder/mmarco-mMiniLMv2-L12-H384-v1
+    revision: main
+    batch_size: 16
+    max_length: 512
+
+generation:
+  provider: openai
+  model_env: OPENAI_MODEL
+  default_model: gpt-5-mini
+  max_evidence_chunks: 5
+  max_evidence_characters: 6500
+
+evaluation:
+  recall_k: [5, 10, 20]
+  mrr_k: 10
+  ndcg_k: 10

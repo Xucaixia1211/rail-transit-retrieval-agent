@@ -1,0 +1,279 @@
+version: 1
+review_status: manually_verified_against_local_corpus
+reviewed_on: 2026-09-14
+questions:
+  - id: q001
+    query: 城市轨道交通“设施”具体包括哪些土建对象？
+    language: zh-CN
+    source_id: cn_mot_maintenance_2024
+    answer: 包括桥梁、隧道、轨道、路基、车站、控制中心和车辆基地等投入运营的土建设施及其监测设备。
+    evidence_terms: [土建设施, 桥梁, 隧道, 控制中心, 车辆基地]
+  - id: q002
+    query: 混凝土桥梁和钢桥的最低巡查频率分别是多少？
+    language: zh-CN
+    source_id: cn_mot_maintenance_2024
+    answer: 混凝土桥梁不低于每3个月1次，钢桥、钢混组合或混合桥梁不低于每月1次。
+    evidence_terms: [混凝土桥梁, 1次/3月, 钢桥, 1次/月]
+  - id: q003
+    query: 最高运行速度不超过120km/h的列车，列检和大修间隔上限是什么？
+    language: zh-CN
+    source_id: cn_mot_maintenance_2024
+    answer: 列检不超过15天，大修不超过12年或160万车公里，以时间和里程先到者为准。
+    evidence_terms: [列检间隔, 15天, 大修间隔, 12年, 160万车公里]
+  - id: q004
+    query: 关键设施设备的检修记录需要保存多久？
+    language: zh-CN
+    source_id: cn_mot_maintenance_2024
+    answer: 检修记录应保存至相应土建设施或运营设备使用寿命终止。
+    evidence_terms: [检修记录, 使用寿命终止]
+  - id: q005
+    query: 城市轨道交通运营安全风险按业务板块分为哪五类？
+    language: zh-CN
+    source_id: cn_mot_risk_control_2024
+    answer: 设施监测养护、设备运行维修、行车组织、客运组织和运行环境五类。
+    evidence_terms: [设施监测养护类风险, 设备运行维修类风险, 行车组织类风险, 客运组织类风险, 运行环境类风险]
+  - id: q006
+    query: 运营安全风险从高到低分为哪些等级？
+    language: zh-CN
+    source_id: cn_mot_risk_control_2024
+    answer: 重大、较大、一般、较小四个等级。
+    evidence_terms: [重大, 较大, 一般, 较小, 四个等级]
+  - id: q007
+    query: 重大风险由谁牵头管控，还要额外编制什么？
+    language: zh-CN
+    source_id: cn_mot_risk_control_2024
+    answer: 由运营单位负责人牵头制定并督促落实管控措施，同时编制监控方案和专项应急措施。
+    evidence_terms: [重大风险, 运营单位负责人, 监控方案, 专项应急措施]
+  - id: q008
+    query: 重大隐患治理方案、验收结论和主管部门确认各有什么期限？
+    language: zh-CN
+    source_id: cn_mot_risk_control_2024
+    answer: 治理方案15个工作日内报送，验收结论3个工作日内报送，主管部门7个工作日内确认。
+    evidence_terms: [15个工作日, 3个工作日, 7个工作日, 重大隐患]
+  - id: q009
+    query: 运营险性事件发生后，运营单位多久内要提交书面快报？
+    language: zh-CN
+    source_id: cn_mot_hazardous_event_reporting_2024
+    answer: 应立即报告初步情况，并在事发1小时内提交书面快报。
+    evidence_terms: [事发1小时内, 书面快报, 立即]
+  - id: q010
+    query: 运营险性事件技术分析报告通常多久形成，最多可延长多久？
+    language: zh-CN
+    source_id: cn_mot_hazardous_event_reporting_2024
+    answer: 原则上30个工作日内形成，复杂事件可延长，但延长期最多不超过30个工作日。
+    evidence_terms: [30个工作日内, 延长期限, 最多不超过30个工作日]
+  - id: q011
+    query: 城市轨道交通主管部门每年应至少组织几次专项或部门预案实战演练？
+    language: zh-CN
+    source_id: cn_mot_emergency_drill_2024
+    answer: 每年至少一次。
+    evidence_terms: [每年至少组织一次, 实战演练, 专项应急预案演练]
+  - id: q012
+    query: 运营单位综合预案实战演练的频率和年度实战演练比例要求是什么？
+    language: zh-CN
+    source_id: cn_mot_emergency_drill_2024
+    answer: 综合预案每半年至少组织一次实战演练，年度综合和专项演练中的实战比例不得低于70%。
+    evidence_terms: [每半年至少组织一次, 实战演练比例, 不得低于70%]
+  - id: q013
+    query: 哪些层级的应急演练必须形成演练评估报告？
+    language: zh-CN
+    source_id: cn_mot_emergency_drill_2024
+    answer: 政府专项、部门预案演练以及运营单位综合、专项预案演练应形成评估报告。
+    evidence_terms: [政府专项, 部门应急预案演练, 运营单位综合, 演练评估报告]
+  - id: q014
+    query: 运营单位制定的行车计划应包括哪些主要计划？
+    language: zh-CN
+    source_id: cn_mot_train_operation_2025
+    answer: 包括列车运行图、车辆运用计划、施工作业计划和乘务计划等。
+    evidence_terms: [列车运行图, 车辆运用计划, 施工作业计划, 乘务计划]
+  - id: q015
+    query: 启用人工闭塞时区间占用和首列车速度有什么限制？
+    language: zh-CN
+    source_id: cn_mot_train_operation_2025
+    answer: 同一时间应确保一站一区间仅一列车占用，首列车速度不高于25km/h。
+    evidence_terms: [一站一区间, 仅一列车占用, 首列车运行速度, 25km/h]
+  - id: q016
+    query: 电话闭塞法启用前必须确认列车处于什么状态？
+    language: zh-CN
+    source_id: cn_mot_train_operation_2025
+    answer: 必须确认所有列车均已在车站（含折返线）停妥。
+    evidence_terms: [电话闭塞法启用前, 所有列车, 车站, 停妥]
+  - id: q017
+    query: 首次开展运营期间安全评估时，前七类材料应覆盖多长历史时期？
+    language: zh-CN
+    source_id: cn_mot_operational_safety_evaluation_2023
+    answer: 应覆盖评估前3年以来的情况。
+    evidence_terms: [首次进行运营期间安全评估, 评估前3年以来]
+    page_hint: 3
+  - id: q018
+    query: 第三方机构开展运营期间安全评估可以采用哪些调查方法？
+    language: zh-CN
+    source_id: cn_mot_operational_safety_evaluation_2023
+    answer: 可采用查阅资料、问卷调查、现场询问、现场检查和专项检测等方式。
+    evidence_terms: [查阅资料, 问卷调查, 现场询问, 现场检查, 专项检测]
+    page_hint: 3
+  - id: q019
+    query: 桥梁混凝土构件裂缝可能引发什么后果？
+    language: zh-CN
+    source_id: cn_mot_major_risk_points_2024
+    answer: 可能导致桥梁变形损伤或结构坍塌。
+    evidence_terms: [混凝土构件裂缝, 桥梁变形损伤, 结构坍塌]
+    page_hint: 1
+  - id: q020
+    query: 车辆基地危险品库和高压容器对应的主要事故风险是什么？
+    language: zh-CN
+    source_id: cn_mot_major_risk_points_2024
+    answer: 可能发生火灾、爆炸。
+    evidence_terms: [危险品库, 高压容器, 火灾爆炸]
+    page_hint: 4
+  - id: q021
+    query: 北京昌平线追尾事故造成了怎样的伤亡和直接经济损失？
+    language: zh-CN
+    source_id: cn_beijing_changping_collision_2024
+    answer: 3人重伤、70人轻伤，无人员死亡，直接经济损失约950.8万元；报告另记载130人骨折。
+    evidence_terms: [3人重伤, 70人轻伤, 950.8万元]
+    page_hint: 1
+  - id: q022
+    query: 北京昌平线事故中，降雪为什么会使后车难以及时停下？
+    language: zh-CN
+    source_id: cn_beijing_changping_collision_2024
+    answer: 降雪造成轨面湿滑、轮轨黏着系数降低，使032车制动距离延长。
+    evidence_terms: [轨面湿滑, 轮轨黏着系数降低, 制动距离延长]
+    page_hint: 19
+  - id: q023
+    query: 报告估算032车在平直干燥轨道上的安全制动距离约为多少？
+    language: zh-CN
+    source_id: cn_beijing_changping_collision_2024
+    answer: 约400.91米。
+    evidence_terms: [平直干燥轨道, 安全制动距离, 400.91米]
+    page_hint: 19
+  - id: q024
+    query: 西安地铁10号线“4·18”试验列车追尾造成了什么损失？
+    language: zh-CN
+    source_id: cn_xian_line10_collision_2025
+    answer: 造成1人死亡、2人受伤，直接经济损失约438万元。
+    evidence_terms: [1人死亡, 2人受伤, 438万元]
+  - id: q025
+    query: 西安“4·18”追尾事故的直接原因是什么？
+    language: zh-CN
+    source_id: cn_xian_line10_collision_2025
+    answer: 后车驾驶员未等前车到达指定位置便提前出发，弯道观察不周，发现前车过晚且制动距离不足。
+    evidence_terms: [擅自提前出发, 观察不周, 制动距离不足]
+  - id: q026
+    query: 上海地铁“9·27”事故中，调度环节的直接违规行为是什么？
+    language: zh-CN
+    source_id: cn_shanghai_line10_collision_2011
+    answer: 行车调度员未准确定位故障区间全部列车便违规发布电话闭塞命令，接车站也未严格确认区间空闲。
+    evidence_terms: [未准确定位, 违规发布电话闭塞命令, 未严格确认区间线路是否空闲]
+  - id: q027
+    query: 上海地铁“9·27”事故被认定为什么性质？
+    language: zh-CN
+    source_id: cn_shanghai_line10_collision_2011
+    answer: 一起造成重大社会影响的责任事故。
+    evidence_terms: [重大社会影响, 责任事故]
+  - id: q028
+    query: “7·23”甬温线事故造成多少伤亡、停运多久和多少直接经济损失？
+    language: zh-CN
+    source_id: cn_yongwen_collision_2011
+    answer: 40人死亡、172人受伤，中断行车32小时35分，直接经济损失19371.65万元。
+    evidence_terms: [40人死亡, 172人受伤, 32小时35分, 19371.65万元]
+  - id: q029
+    query: 甬温线事故中LKD2-T1列控中心设备存在什么核心缺陷？
+    language: zh-CN
+    source_id: cn_yongwen_collision_2011
+    answer: 设备设计存在严重缺陷，故障后没有导向安全，错误控制轨道电路发码及信号显示。
+    evidence_terms: [LKD2-T1, 设计存在严重缺陷, 未导向安全]
+  - id: q030
+    query: “7·23”甬温线事故最终被认定为什么性质？
+    language: zh-CN
+    source_id: cn_yongwen_collision_2011
+    answer: 一起因列控设备严重设计缺陷、上道审查把关不严和故障后应急处置不力等因素造成的责任事故。
+    evidence_terms: [事故性质, 严重设计缺陷, 责任事故]
+  - id: q031
+    query: What file extension must an RCM-DX compliant file use?
+    language: en
+    source_id: ch_openrail_rcm_dx
+    answer: It must use the .rcmdx file extension.
+    evidence_terms: [file extension, rcmdx]
+  - id: q032
+    query: How does RCM-DX encode an absolute timestamp?
+    language: en
+    source_id: ch_openrail_rcm_dx
+    answer: As a 64-bit unsigned integer counting nanoseconds since 1970-01-01 00:00 UTC, without leap seconds.
+    evidence_terms: [nanoseconds since January 1, 1970, 64 bit unsigned integer, without leap seconds]
+  - id: q033
+    query: What performance benefit does HDF5 chunking provide in RCM-DX?
+    language: en
+    source_id: ch_openrail_rcm_dx
+    answer: It divides data into independently processable blocks and enables faster access to parts of the data.
+    evidence_terms: [divided into blocks, processed independently, faster access]
+  - id: q034
+    query: What does reactive railway maintenance mean?
+    language: en
+    source_id: nl_tudelft_railway_maintenance
+    answer: It means waiting until a part breaks before repairing it.
+    evidence_terms: [Reactive maintenance, waits for a part to break]
+  - id: q035
+    query: Which two strategies are used to schedule preventive railway maintenance?
+    language: en
+    source_id: nl_tudelft_railway_maintenance
+    answer: Fixed-interval maintenance and condition-based maintenance.
+    evidence_terms: [fixed interval maintenance, condition based maintenance]
+  - id: q036
+    query: Why does condition-based maintenance require monitoring data?
+    language: en
+    source_id: nl_tudelft_railway_maintenance
+    answer: The interval depends on the asset's actual condition and degradation forecast rather than its average life expectancy.
+    evidence_terms: [actual condition, average life expectancy, Monitoring]
+  - id: q037
+    query: When and at what speed did the Hatfield train derailment described by TU Delft occur?
+    language: en
+    source_id: nl_tudelft_railway_maintenance
+    answer: It occurred on 17 October 2000 while the train was travelling at 115 mph (185 km/h).
+    evidence_terms: [17th of October in 2000, 115 miles/hour, 185 Km/h]
+  - id: q038
+    query: What are the main advantage and practical limitation of ultrasonic rail inspection?
+    language: en
+    source_id: nl_tudelft_railway_maintenance
+    answer: Its short wavelength detects small cracks, but it is sensitive to external distortion and works best with close or direct sensor contact.
+    evidence_terms: [short wavelength, small cracks, distortion, direct contact]
+  - id: q039
+    query: Which rail defects can eddy-current inspection detect?
+    language: en
+    source_id: nl_tudelft_railway_maintenance
+    answer: Defects in or near the rail surface.
+    evidence_terms: [Eddy current inspections, defects in or near the surface]
+  - id: q040
+    query: How does structural health monitoring differ from conventional nondestructive testing?
+    language: en
+    source_id: nl_tudelft_railway_maintenance
+    answer: Conventional nondestructive testing is active and periodic, while SHM is passive and continuously observes sensor data.
+    evidence_terms: [active testing, passive, Structural health monitoring]
+  - id: q041
+    query: What ECM certificate is required for freight wagons used only in Great Britain?
+    language: en
+    source_id: uk_orr_ecm_guidance_2023
+    answer: The ECM must hold a still-valid pre-exit EU certificate or a UK-issued ECM certificate under ROGS Schedules 9 and 10.
+    evidence_terms: [freight wagons, domestic only service, UK-issued ECM certificate]
+    page_hint: 8
+  - id: q042
+    query: What certification is required for an ECM responsible for Channel Tunnel vehicles?
+    language: en
+    source_id: uk_orr_ecm_guidance_2023
+    answer: It must hold a valid ECM certificate issued by a certification body; a cross-border UK-issued certificate can be issued under retained Regulation 2019/779.
+    evidence_terms: [Channel Tunnel, valid ECM certificate, certification body]
+    page_hint: 12
+  - id: q043
+    query: What happened at Staniforth Road on 22 June 2025, and how serious were the injuries?
+    language: en
+    source_id: uk_raib_metro_light_rail_collection
+    answer: A tram struck two pedestrians at a footpath crossing; one sustained serious injuries and the other minor injuries.
+    evidence_terms: [Staniforth Road, 22 June 2025, serious injuries, minor injuries]
+    page_hint: 7
+  - id: q044
+    query: What two failures did the NTSB identify as the probable cause of the Fort Totten collision?
+    language: en
+    source_id: us_ntsb_wmata_collision_2010
+    answer: Faulty track-circuit modules caused loss of train detection, and WMATA failed to institutionalize the enhanced verification test systemwide.
+    evidence_terms: [probable cause, failure of the track circuit modules, institutionalized, systemwide]
+    page_hint: 16

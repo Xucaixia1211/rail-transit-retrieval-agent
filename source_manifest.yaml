@@ -1,0 +1,390 @@
+manifest_version: 1
+project: rail-transit-retrieval-agent
+description: >-
+  可追溯的轨道交通检索语料来源清单。受限来源仅允许下载到本地忽略目录；
+  明确开放许可的来源仍默认不提交原始文件，后续发布样例时必须逐项保留署名和许可证。
+
+defaults:
+  output_root: data/raw
+  timeout_seconds: 60
+  retries: 3
+  request_delay_seconds: 0.6
+  max_file_size_mb: 350
+  require_https: true
+  user_agent: >-
+    RailTransitRetrievalAgent/0.1
+    (academic portfolio corpus builder; contact: xucaixia@163.sufe.edu.cn)
+
+sources:
+  - id: cn_mot_maintenance_2024
+    title: 城市轨道交通设施设备运行维护管理办法
+    language: zh-CN
+    jurisdiction: CN
+    category: regulation
+    version: 交运规〔2024〕9号
+    publication_date: 2024-11-15
+    source_page: https://xxgk.mot.gov.cn/2020/xzgfxwj/202411/t20241115_4159468.html
+    license:
+      status: no_explicit_open_license
+      name: null
+      url: null
+    repository_policy: manifest_only
+    fetch:
+      enabled: true
+      kind: webpage
+      url: https://xxgk.mot.gov.cn/2020/xzgfxwj/202411/t20241115_4159468.html
+      filename: cn_mot_maintenance_2024.html
+      allowed_hosts: [xxgk.mot.gov.cn, www.mot.gov.cn, mot.gov.cn]
+    notes: 现行版本；交运规〔2019〕8号已废止。
+
+  - id: cn_mot_risk_control_2024
+    title: 城市轨道交通运营安全风险分级管控和隐患排查治理管理办法
+    language: zh-CN
+    jurisdiction: CN
+    category: regulation
+    version: 交运规〔2024〕10号
+    publication_date: 2024-11-15
+    source_page: https://xxgk.mot.gov.cn/2020/xzgfxwj/202411/t20241115_4159469.html
+    license:
+      status: no_explicit_open_license
+      name: null
+      url: null
+    repository_policy: manifest_only
+    fetch:
+      enabled: true
+      kind: webpage
+      url: https://xxgk.mot.gov.cn/2020/xzgfxwj/202411/t20241115_4159469.html
+      filename: cn_mot_risk_control_2024.html
+      allowed_hosts: [xxgk.mot.gov.cn, www.mot.gov.cn, mot.gov.cn]
+
+  - id: cn_mot_major_risk_points_2024
+    title: 城市轨道交通运营安全主要风险点
+    language: zh-CN
+    jurisdiction: CN
+    category: regulation
+    version: 2024附件
+    publication_date: 2024-11-15
+    source_page: https://xxgk.mot.gov.cn/2020/xzgfxwj/202411/t20241115_4159469.html
+    license:
+      status: no_explicit_open_license
+      name: null
+      url: null
+    repository_policy: manifest_only
+    fetch:
+      enabled: true
+      kind: file
+      url: https://xxgk.mot.gov.cn/2020/xzgfxwj/202411/P020250110343074565887.pdf
+      filename: cn_mot_major_risk_points_2024.pdf
+      expected_content_type: application/pdf
+      allowed_hosts: [xxgk.mot.gov.cn, www.mot.gov.cn, mot.gov.cn]
+
+  - id: cn_mot_hazardous_event_reporting_2024
+    title: 城市轨道交通运营险性事件信息报告与分析管理办法
+    language: zh-CN
+    jurisdiction: CN
+    category: regulation
+    version: 交运规〔2024〕6号
+    publication_date: 2024-08-07
+    source_page: https://xxgk.mot.gov.cn/xzgfxwj/202408/t20240807_4149389.html
+    license:
+      status: no_explicit_open_license
+      name: null
+      url: null
+    repository_policy: manifest_only
+    fetch:
+      enabled: true
+      kind: webpage
+      url: https://xxgk.mot.gov.cn/xzgfxwj/202408/t20240807_4149389.html
+      filename: cn_mot_hazardous_event_reporting_2024.html
+      allowed_hosts: [xxgk.mot.gov.cn, www.mot.gov.cn, mot.gov.cn]
+    notes: 现行版本；交运规〔2019〕10号已废止。
+
+  - id: cn_mot_emergency_drill_2024
+    title: 城市轨道交通运营突发事件应急演练管理办法
+    language: zh-CN
+    jurisdiction: CN
+    category: regulation
+    version: 交运规〔2024〕5号
+    publication_date: 2024-08-07
+    source_page: https://xxgk.mot.gov.cn/xzgfxwj/202408/t20240807_4147491.html
+    license:
+      status: no_explicit_open_license
+      name: null
+      url: null
+    repository_policy: manifest_only
+    fetch:
+      enabled: true
+      kind: webpage
+      url: https://xxgk.mot.gov.cn/xzgfxwj/202408/t20240807_4147491.html
+      filename: cn_mot_emergency_drill_2024.html
+      allowed_hosts: [xxgk.mot.gov.cn, www.mot.gov.cn, mot.gov.cn]
+    notes: 现行版本；交运规〔2019〕9号已废止。
+
+  - id: cn_mot_train_operation_2025
+    title: 城市轨道交通行车组织管理办法
+    language: zh-CN
+    jurisdiction: CN
+    category: regulation
+    version: 交运规〔2025〕2号
+    publication_date: 2025-04-14
+    source_page: https://xxgk.mot.gov.cn/xzgfxwj/202504/t20250414_4166929.html
+    license:
+      status: no_explicit_open_license
+      name: null
+      url: null
+    repository_policy: manifest_only
+    fetch:
+      enabled: true
+      kind: webpage
+      url: https://xxgk.mot.gov.cn/xzgfxwj/202504/t20250414_4166929.html
+      filename: cn_mot_train_operation_2025.html
+      allowed_hosts: [xxgk.mot.gov.cn, www.mot.gov.cn, mot.gov.cn]
+    notes: 现行版本；交运规〔2019〕14号已废止。
+
+  - id: cn_mot_operational_safety_evaluation_2023
+    title: 城市轨道交通运营期间安全评估规范
+    language: zh-CN
+    jurisdiction: CN
+    category: regulation
+    version: 交办运〔2023〕58号
+    publication_date: 2023-10-10
+    source_page: https://xxgk.mot.gov.cn/jigou/ysfws/202310/t20231010_3925485.html
+    license:
+      status: no_explicit_open_license
+      name: null
+      url: null
+    repository_policy: manifest_only
+    fetch:
+      enabled: true
+      kind: file
+      url: https://xxgk.mot.gov.cn/jigou/ysfws/202310/P020231010373386741552.pdf
+      filename: cn_mot_operational_safety_evaluation_2023.pdf
+      expected_content_type: application/pdf
+      allowed_hosts: [xxgk.mot.gov.cn, www.mot.gov.cn, mot.gov.cn]
+
+  - id: cn_beijing_changping_collision_2024
+    title: 北京地铁昌平线“12·14”列车追尾事故调查报告
+    language: zh-CN
+    jurisdiction: CN
+    category: incident
+    version: 2024-02
+    publication_date: 2024-02-05
+    source_page: https://yjglj.beijing.gov.cn/art/2024/2/5/art_4520_652.html
+    license:
+      status: no_explicit_open_license
+      name: null
+      url: null
+    repository_policy: manifest_only
+    fetch:
+      enabled: true
+      kind: file
+      url: "https://yjglj.beijing.gov.cn/attach/0/%E5%8C%97%E4%BA%AC%E5%9C%B0%E9%93%81%E6%98%8C%E5%B9%B3%E7%BA%BF%E2%80%9C12%C2%B714%E2%80%9D%E5%88%97%E8%BD%A6%E8%BF%BD%E5%B0%BE%E4%BA%8B%E6%95%85%E8%B0%83%E6%9F%A5%E6%8A%A5%E5%91%8A.pdf"
+      filename: cn_beijing_changping_collision_2024.pdf
+      expected_content_type: application/pdf
+      allowed_hosts: [yjglj.beijing.gov.cn]
+
+  - id: cn_xian_line10_collision_2025
+    title: 地铁10号线西安中车长客轨道车辆有限公司“4·18”一般列车追尾事故调查报告
+    language: zh-CN
+    jurisdiction: CN
+    category: incident
+    version: 2025-09
+    publication_date: 2025-09-19
+    source_page: https://yjglj.xa.gov.cn/gk/zdlyxxgk/sgxx/1968979003870097410.html
+    license:
+      status: no_explicit_open_license
+      name: null
+      url: null
+    repository_policy: manifest_only
+    fetch:
+      enabled: true
+      kind: webpage
+      url: https://yjglj.xa.gov.cn/gk/zdlyxxgk/sgxx/1968979003870097410.html
+      filename: cn_xian_line10_collision_2025.html
+      allowed_hosts: [yjglj.xa.gov.cn]
+
+  - id: cn_shanghai_line10_collision_2011
+    title: 上海地铁“9·27”事故调查结果
+    language: zh-CN
+    jurisdiction: CN
+    category: incident
+    version: 2011
+    publication_date: 2011-10-06
+    source_page: https://www.shjjjc.gov.cn/2015jjw/n2230/n2237/u1ai34562.html
+    license:
+      status: no_explicit_open_license
+      name: null
+      url: null
+    repository_policy: manifest_only
+    fetch:
+      enabled: true
+      kind: webpage
+      url: https://www.shjjjc.gov.cn/2015jjw/n2230/n2237/u1ai34562.html
+      filename: cn_shanghai_line10_collision_2011.html
+      allowed_hosts: [www.shjjjc.gov.cn, shjjjc.gov.cn]
+
+  - id: cn_yongwen_collision_2011
+    title: “7·23”甬温线特别重大铁路交通事故调查报告
+    language: zh-CN
+    jurisdiction: CN
+    category: incident
+    version: 2011-12
+    publication_date: 2011-12-28
+    source_page: https://www.mem.gov.cn/gk/sgcc/tbzdsgdcbg/2011/201112/t20111228_245242.shtml
+    license:
+      status: no_explicit_open_license
+      name: null
+      url: null
+    repository_policy: manifest_only
+    fetch:
+      enabled: true
+      kind: webpage
+      url: https://www.mem.gov.cn/gk/sgcc/tbzdsgdcbg/2011/201112/t20111228_245242.shtml
+      filename: cn_yongwen_collision_2011.html
+      allowed_hosts: [www.mem.gov.cn, mem.gov.cn]
+
+  - id: uk_raib_metro_light_rail_collection
+    title: RAIB Metro and Light Rail Investigation Reports
+    language: en-GB
+    jurisdiction: GB
+    category: incident
+    version: rolling
+    publication_date: null
+    source_page: "https://www.gov.uk/raib-reports?railway_type%5B%5D=light-rail&railway_type%5B%5D=metros&report_type%5B%5D=investigation-report"
+    license:
+      status: open_license
+      name: Open Government Licence v3.0
+      url: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
+      attribution: Contains public sector information licensed under the Open Government Licence v3.0.
+    repository_policy: raw_allowed_with_attribution
+    fetch:
+      enabled: true
+      kind: govuk_raib_collection
+      url: "https://www.gov.uk/raib-reports?railway_type%5B%5D=light-rail&railway_type%5B%5D=metros&report_type%5B%5D=investigation-report"
+      max_items: 10
+      allowed_hosts: [www.gov.uk, gov.uk, assets.publishing.service.gov.uk]
+    notes: 下载正文PDF；不得复用部门标识或明确标注的第三方素材。
+
+  - id: uk_orr_ecm_guidance_2023
+    title: Guidance for Entities in Charge of Maintenance in Great Britain
+    language: en-GB
+    jurisdiction: GB
+    category: technical
+    version: 2023-08
+    publication_date: 2023-08-01
+    source_page: https://www.orr.gov.uk/guidance-compliance/rail/health-safety/entities-charge-maintenance
+    license:
+      status: open_license
+      name: Open Government Licence v3.0
+      url: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
+      attribution: © Office of Rail and Road 2023; licensed under OGL v3.0 except where otherwise stated.
+    repository_policy: raw_allowed_with_attribution
+    fetch:
+      enabled: true
+      kind: file
+      url: https://www.orr.gov.uk/sites/default/files/2023-08/guidance-for-entities-in-charge-of-maintenance-in-great-britain-08-2023.pdf
+      filename: uk_orr_ecm_guidance_2023.pdf
+      expected_content_type: application/pdf
+      allowed_hosts: [www.orr.gov.uk, orr.gov.uk]
+
+  - id: nl_tudelft_railway_maintenance
+    title: Railway Engineering - Monitoring and Maintenance Readings
+    language: en
+    jurisdiction: NL
+    category: technical
+    version: rolling
+    publication_date: null
+    source_page: https://ocw.tudelft.nl/courses/railway-engineering-integral-approach/
+    license:
+      status: open_license_noncommercial
+      name: CC BY-NC-SA 4.0
+      url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+      attribution: "Railway Engineering: An Integral Approach, TU Delft OpenCourseWare."
+    repository_policy: raw_allowed_noncommercial_sharealike
+    fetch:
+      enabled: true
+      kind: webpage_bundle
+      urls:
+        - https://ocw.tudelft.nl/course-readings/5-1-1-maintenance/
+        - https://ocw.tudelft.nl/course-readings/5-3-1-railway-monitoring-techniques/
+        - https://ocw.tudelft.nl/course-readings/5-5-1-performance-time/
+      filenames:
+        - nl_tudelft_maintenance.html
+        - nl_tudelft_monitoring.html
+        - nl_tudelft_performance_time.html
+      allowed_hosts: [ocw.tudelft.nl]
+    notes: 只允许非商业复用，衍生内容须以相同许可证共享。
+
+  - id: ch_openrail_rcm_dx
+    title: OpenRail RCM-DX Specification
+    language: en
+    jurisdiction: CH
+    category: dataset_doc
+    version: main
+    publication_date: null
+    source_page: https://github.com/OpenRailAssociation/rcm-dx
+    license:
+      status: open_source
+      name: Eclipse Public License 2.0
+      url: https://www.eclipse.org/legal/epl-2.0/
+      attribution: OpenRail Association RCM-DX contributors.
+    repository_policy: raw_allowed_with_attribution
+    fetch:
+      enabled: true
+      kind: file
+      url: https://github.com/OpenRailAssociation/rcm-dx/archive/refs/heads/main.zip
+      filename: ch_openrail_rcm_dx_main.zip
+      expected_content_type: application/zip
+      allowed_hosts: [github.com, codeload.github.com]
+    process:
+      include_members:
+        - "*/RCM-DX-Specification_EN.md"
+
+  - id: us_ntsb_wmata_collision_2010
+    title: Collision of Two Washington Metropolitan Area Transit Authority Metrorail Trains
+    language: en-US
+    jurisdiction: US
+    category: incident
+    version: RAR-10/02
+    publication_date: 2010-07-27
+    source_page: https://www.ntsb.gov/investigations/Pages/DCA09MR007.aspx
+    license:
+      status: us_federal_work
+      name: 17 U.S.C. §105
+      url: https://www.copyright.gov/title17/92chap1.html#105
+      attribution: National Transportation Safety Board, Railroad Accident Report RAR-10/02.
+    repository_policy: raw_allowed_with_third_party_exclusions
+    fetch:
+      enabled: true
+      kind: file
+      url: https://www.ntsb.gov/investigations/AccidentReports/Reports/RAR1002.pdf
+      filename: us_ntsb_wmata_collision_2010.pdf
+      expected_content_type: application/pdf
+      allowed_hosts: [www.ntsb.gov, ntsb.gov]
+    notes: 美国联邦政府作品原则上不受版权保护；第三方图片、附件和商标仍需排除。
+
+  - id: pt_uci_metropt3
+    title: MetroPT-3 Dataset and Data Description
+    language: en
+    jurisdiction: PT
+    category: dataset_doc
+    version: UCI-791
+    publication_date: 2022-12-13
+    source_page: https://archive.ics.uci.edu/dataset/791/metropt+3+dataset
+    license:
+      status: open_license
+      name: CC BY 4.0
+      url: https://creativecommons.org/licenses/by/4.0/
+      attribution: >-
+        Davari, N., Veloso, B., Ribeiro, R., and Gama, J. (2021),
+        MetroPT-3 Dataset, UCI Machine Learning Repository, DOI 10.24432/C5VW3R.
+    repository_policy: raw_allowed_with_attribution
+    fetch:
+      enabled: false
+      kind: file
+      url: https://archive.ics.uci.edu/static/public/791/metropt+3+dataset.zip
+      filename: pt_uci_metropt3.zip
+      expected_content_type: application/zip
+      allowed_hosts: [archive.ics.uci.edu, www.archive.ics.uci.edu]
+      max_file_size_mb: 300
+    notes: 约208 MB，默认关闭；使用--include-disabled显式下载。
